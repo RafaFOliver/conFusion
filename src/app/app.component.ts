@@ -4,6 +4,10 @@ import { Platform } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 
+import { AboutPage } from './about/about.page';
+import { ContactPage } from './contact/contact.page';
+import { MenuPage } from './menu/menu.page';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -28,18 +32,18 @@ export class AppComponent implements OnInit {
       icon: 'heart'
     },
     {
-      title: 'Archived',
-      url: '/folder/Archived',
+      title: 'Contact',
+      url: '/contact',
       icon: 'archive'
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
+      title: 'Menu',
+      url: '/menu',
       icon: 'trash'
     },
     {
-      title: 'Spam',
-      url: '/folder/Spam',
+      title: 'About',
+      url: '/about',
       icon: 'warning'
     }
   ];
